@@ -1,8 +1,9 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useContext } from 'react';
 import Level1 from './Level1';
-import Level2 from './Level2';
 
 export const ColorContext = createContext();
+
+export const useCustomHook = () => useContext(ColorContext);
 
 const App2 = () => {
   const [color, setColor] = useState('red');

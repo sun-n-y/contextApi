@@ -1,4 +1,8 @@
+import { useCustomHook } from './App2';
+
 const Level2 = () => {
-  return <div>Level2</div>;
+  const { color, showColor } = useCustomHook();
+
+  return <div>{color}</div>;
 };
 export default Level2;

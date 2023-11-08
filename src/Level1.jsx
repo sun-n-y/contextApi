@@ -1,9 +1,9 @@
-import { useContext } from 'react';
-import { ColorContext } from './App2';
+import { useCustomHook } from './App2';
 import Level2 from './Level2';
 
 const Level1 = () => {
-  const { color, showColor } = useContext(ColorContext);
+  const { color, showColor } = useCustomHook();
+
   return (
     <div>
       <h1 style={{ color: color }}>{color}</h1>
