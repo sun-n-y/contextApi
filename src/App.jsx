@@ -1,5 +1,11 @@
+import Navbar from './Navbar';
+
 function App() {
-  return <h1>t</h1>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
