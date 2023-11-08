@@ -7,10 +7,10 @@ const Navbar = () => {
     setUser(null);
   };
   return (
-    <>
+    <nav>
       <h1>context api</h1>
-      <NavLinks user={user} logout={logout} />
-    </>
+      <NavLinks />
+    </nav>
   );
 };
 export default Navbar;
