@@ -1,6 +1,6 @@
 const UserContainer = ({ user, logout }) => {
   return (
-    <>
+    <div>
       {user ? (
         <>
           <h3>Hi, {user?.name?.toUpperCase()}</h3>
@@ -11,7 +11,7 @@ const UserContainer = ({ user, logout }) => {
       ) : (
         <p>please login</p>
       )}
-    </>
+    </div>
   );
 };
 export default UserContainer;
