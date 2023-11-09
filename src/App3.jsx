@@ -1,8 +1,7 @@
-import { useCustomHook } from './context';
+import { useCustomHook2 } from './context2';
 
 const App3 = () => {
-  const value = useCustomHook();
-  console.log(value);
-  return <div>App3 </div>;
+  const { name } = useCustomHook2();
+  return <div>{name}</div>;
 };
 export default App3;

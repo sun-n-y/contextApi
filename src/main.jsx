@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App.jsx';
-import App3 from './App3.jsx';
-import App4 from './App4.jsx';
-import AppContext from './context.jsx';
+import App3 from './App3';
+import AppContext2 from './context2';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <AppContext>
-    <App3 />
-  </AppContext>
+  <>
+    <AppContext2>
+      <App3 />
+    </AppContext2>
+  </>
 );
